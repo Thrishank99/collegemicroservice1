@@ -40,7 +40,7 @@ public class CollegeServiceImpl implements CollegeService {
 
 	@Override
 	public Object[] getCollegeToStudentDetails() {
-	//Object[] students=restTemplate.getForObject(ENDPOINT_URL, Object[].class);
+	////Object[] students=restTemplate.getForObject(ENDPOINT_URL, Object[].class);
 	Object[] students=restTemplate.getForObject("http://localhost:8082/college/findAll", Object[].class);
 		return students;
 	}
